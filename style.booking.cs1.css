@@ -22,7 +22,7 @@ body{
 background-repeat:no-repeat;
 background-size:cover;
            no-repeat center center;
-           height: 30 rem;
+           height: 30rem;
 }
 
  nav{
@@ -223,5 +223,6 @@ input::placeholder
     color: #000!important;
     transition: 0.5s;
 }
+
 
 
