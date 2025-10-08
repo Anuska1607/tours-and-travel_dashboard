@@ -115,15 +115,6 @@ footer{
       overflow: auto;
 }
 
-body
-{
-    background-image:url(C:\Users\anusk\Desktop\web application class 12\bg-2.jpg);
-     background-position: center;
-    background-size: cover;
-    font-family: sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.jpg);
-   
-}
 .booking-form-box
 {
     max-width: 350px;
@@ -232,3 +223,4 @@ input::placeholder
     color: #000!important;
     transition: 0.5s;
 }
+
