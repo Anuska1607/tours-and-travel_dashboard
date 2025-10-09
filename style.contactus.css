@@ -235,3 +235,116 @@ section i{
         right: 30px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+  }
+
+  nav {
+    height: auto;
+    line-height: normal;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  nav ul {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  img {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .wrapper {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  header {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .empty {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content section {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form {
+    position: static;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form .contact-form input,
+  .form .contact-form textarea {
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .form .contact-form input[type=submit] {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .form .contact-form input ~ span,
+  .form .contact-form textarea ~ span {
+    left: 10px;
+    font-size: 12px;
+  }
+
+  .media {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .media li {
+    margin: 10px;
+  }
+}
