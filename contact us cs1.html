@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - School Web Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.contactus.css">
+    
+</head>
+
+
+<body>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="brand">ANUSREE TRAVELLS</span>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery case study.html">Gallery</a></li>
+        <li><a href="booking.html">Online Booking</a></li>
+        <li><a href="contact us cs1.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Contact Us</h1>
+      <p>You can always contact us through this page and phone number provided. We will be very happy to help you. Please do contact us whenever required. We will always be there for your help.</p>
+    </header>
+
+    <div class="content-form">
+      <section>
+        <i class="fa fa-map-marker fa-2x"></i>
+        <h2>Address</h2>
+        <p>
+          JAWHAR MANSION<br>
+          5 Moti Sil Street, Kolkata - 700 013, West Bengal, India<br>
+          (Esplanade - Beside Metro Cinema)
+        </p>
+      </section>
+
+      <section>
+        <i class="fa fa-phone fa-2x"></i>
+        <h2>Phone</h2>
+        <p>(033) 2228-2152, (033) 2228-2585, (033) 2228-9503</p>
+      </section>
+
+      <section>
+        <i class="fa fa-envelope fa-2x"></i>
+        <h2>Email</h2>
+        <p>banerjeespecial@yahoo.com<br>info@banerjeespecial.com</p>
+      </section>
+    </div>
+
+    <form>
+      <div class="contact-form">
+        <input type="text" required>
+        <span>Full Name</span>
+      </div>
+      <div class="contact-form">
+        <input type="email" required>
+        <span>Email ID</span>
+      </div>
+      <div class="contact-form">
+        <textarea rows="5" required></textarea>
+        <span>Type your message...</span>
+      </div>
+      <div class="contact-form">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <ul class="media">
+      <li><i class="fab fa-facebook-square fa-2x"></i></li>
+      <li><i class="fab fa-instagram fa-2x"></i></li>
+      <li><i class="fab fa-whatsapp fa-2x"></i></li>
+      <li><i class="fab fa-twitter-square fa-2x"></i></li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Anusree Travells. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

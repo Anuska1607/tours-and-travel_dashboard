@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #000;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    .menu-toggle {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .nav-links li a:hover {
+      background-color: orange;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero-image {
+      background-image: url("forest scenary 5.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .marquee {
+      font-size: 0.9rem;
+      color: black;
+      background-color: rgba(255,255,255,0.7);
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .section {
+      padding: 20px;
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      color: red;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        margin-top: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links li {
+        text-align: center;
+        border-bottom: 1px solid #333;
+      }
+
+      .hero-image {
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 1.5rem;
+      }
+
+      .section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <img src="case stydy 1.jpg" alt="Logo" class="logo">
+      <span class="brand">ANUSREE TRAVELLS</span>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="case study 1.html">Home</a></li>
+        <li><a href="gallery case study.html">Gallery</a></li>
+        <li><a href="booking.html">Online Booking</a></li>
+        <li><a href="contact us cs1.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome to ANUSREE TRAVELLS</h1>
+    </div>
+  </div>
+
+  <div class="marquee">
+    <marquee direction="left">
+      Special offers: Shimla-Manali (10 June), Arunachal Pradesh (23 Oct), Kerala-Kanyakumari (15 Nov), Puri-Orissa (16 Apr), Gujarat (26 Aug). Book now!
+    </marquee>
+  </div>
+
+  <div class="section">
+    <h2>Our Vision</h2>
+    <hr>
+    <p>
+      India offers travel opportunities of all kinds. Anusree Special presents India in a unique, unexplored way. We specialize in cultural, adventure, beach, and eco tours across India and neighboring countries. Our goal is to showcase India's vast beauty and unite travelers through unforgettable experiences.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Our Mission</h2>
+    <hr>
+    <p>
+      We aim to be a meaningful resource for tourism and vacations. Our mission is to deliver excellence and quality service. Our team brings unique expertise to enhance your travel experience. We strive to provide reliable, satisfying services that inspire repeat journeys.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Welcome to the most authenticated tour operator of West Bengal</h2>
+    <hr>
+    <p>
+      An Indian Travel Agency and Tour Operator catering to the needs of Indian Tourism. We offer cultural heritage tours, discounted itineraries, air and rail journeys, and online hotel bookings for deluxe and luxury stays.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 Anusree Travells. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
